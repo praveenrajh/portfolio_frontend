@@ -106,7 +106,7 @@ const work = [
     imgUrl: images.about01,
     tag: ["MERN"],
     codeLink: "https://github.com/praveenrajh/Bulk_Email_Tool",
-    link: "https://bulkey.netlify.app/",
+    link: "https://unique-rugelach-af3843.netlify.app/login",
   },
   {
     title: "Let’s Cook",

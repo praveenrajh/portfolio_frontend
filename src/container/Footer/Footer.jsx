@@ -23,9 +23,9 @@ const Footer = () => {
   const handleSubmit = () => {
     setLoading(true);
 
-    const serviceId = process.env.React_App_EMAIL_SERVICE;
-    const templateId = process.env.React_App_EMAIL_TEMPLATE;
-    const publicKey = process.env.React_App_EMAIL_KEY;
+    const serviceId = process.env.REACT_APP_EMAIL_SERVICE;
+    const templateId = process.env.REACT_APP_EMAIL_TEMPLATE;
+    const publicKey = process.env.REACT_APP_EMAIL_KEY;
 
     const contact = {
       _type: "contact",

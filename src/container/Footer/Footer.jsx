@@ -26,7 +26,7 @@ const Footer = () => {
     const serviceId = process.env.REACT_APP_EMAIL_SERVICE;
     const templateId = process.env.REACT_APP_EMAIL_TEMPLATE;
     const publicKey = process.env.REACT_APP_EMAIL_KEY;
-
+    console.log(serviceId);
     const contact = {
       _type: "contact",
       name: formData.username,

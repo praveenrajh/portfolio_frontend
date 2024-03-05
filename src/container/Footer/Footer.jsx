@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { images } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import "./Footer.scss";
+import emailjs from "@emailjs/browser";
 
 const Footer = () => {
   const [formData, setFormData] = useState({
@@ -22,20 +23,26 @@ const Footer = () => {
   const handleSubmit = () => {
     setLoading(true);
 
+    const serviceId = process.env.React_App_EMAIL_SERVICE;
+    const templateId = process.env.React_App_EMAIL_TEMPLATE;
+    const publicKey = process.env.React_App_EMAIL_KEY;
+
     const contact = {
       _type: "contact",
       name: formData.username,
       email: formData.email,
+      to_name: "Praveen Raj",
       message: formData.message,
     };
 
-    // client
-    //   .create(contact)
-    //   .then(() => {
-    //     setLoading(false);
-    //     setIsFormSubmitted(true);
-    //   })
-    //   .catch((err) => console.log(err));
+    emailjs
+      .send(serviceId, templateId, contact, publicKey)
+      .then((res) => {
+        console.log("Email sent succesful");
+        setLoading(false);
+        setIsFormSubmitted(true);
+      })
+      .catch((err) => console.log(err));
   };
   return (
     <>

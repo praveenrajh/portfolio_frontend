@@ -49,8 +49,8 @@ const skills = [
     bgColor: skillColor,
   },
   {
-    name: "TypeScript",
-    icon: `${images.typescript}`,
+    name: "Bootstrap",
+    icon: `${images.bootstrap}`,
     bgColor: skillColor,
   },
   {
@@ -59,8 +59,8 @@ const skills = [
     bgColor: skillColor,
   },
   {
-    name: "API",
-    icon: `${images.api}`,
+    name: "Tailwind",
+    icon: `${images.tailwind}`,
     bgColor: skillColor,
   },
 ];
@@ -103,7 +103,7 @@ const work = [
     title: "Mailey",
     description:
       "Mailey is designed to streamline the process of sending bulk emails to a large number of recipients with ease and efficiency",
-    imgUrl: images.about01,
+    imgUrl: images.bulkey,
     tag: ["MERN"],
     codeLink: "https://github.com/praveenrajh/Bulk_Email_Tool",
     link: "https://unique-rugelach-af3843.netlify.app/login",
@@ -112,7 +112,7 @@ const work = [
     title: "Let’s Cook",
     description:
       "Let's Cook is a dynamic and interactive Recipe Book application, in this we can seamlessly create, edit, and view their recipe",
-    imgUrl: images.about02,
+    imgUrl: images.letscook,
     tag: ["MERN"],
     codeLink: "https://github.com/praveenrajh/letscook-frontend",
     link: "https://letcook.netlify.app/",
@@ -121,7 +121,7 @@ const work = [
     title: "Rentley",
     description:
       "Rentley is designed to facilitate the seamless process of effortlessly renting hotel rooms and managing bookings with unparalleled efficiency",
-    imgUrl: images.about03,
+    imgUrl: images.rentley,
     tag: ["MERN"],
     codeLink: "https://github.com/praveenrajh/Rentley",
     link: "https://rentley.netlify.app/",
